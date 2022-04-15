@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akshar', sans-serif;
+}
+body{background-color: currentColor;}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.img{
+    position: relative;
+    width: 200px;
+    height: 315px;
+    top: -37px;
+    transition: 1s;
+    margin: 20px;
+}
+.image1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.image1:hover #book1 {
+    transform: perspective(800px) rotateY(-80deg);
+    transform-origin: left;
+}
+.image2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.image2:hover #book2 {
+    transform: perspective(800px) rotateY(-80deg);
+    transform-origin: left;
+}
+.image3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.image3:hover #book3 {
+    transform: perspective(800px) rotateY(-80deg);
+    transform-origin: left;
+}
+#back-img {
+    width: 900px;
+    height: 713px;
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+h3{
+    text-align: center;
+    padding: 12px;
+}
+p {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 1px transparent solid;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    background: linear-gradient(284deg, #e17c58a6, #ffede28a);
+    border-radius: 5px;
+    top: 147px;
+    z-index: -1;
+}
