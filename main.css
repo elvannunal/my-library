@@ -19,6 +19,7 @@ body{background-color: currentColor;}
     top: -37px;
     transition: 1s;
     margin: 20px;
+    transform-origin: left;
 }
 .image1{
     display: flex;
@@ -26,10 +27,10 @@ body{background-color: currentColor;}
     justify-content: center;
     height: 100vh;
     transform-style: preserve-3d;
+    transform-origin: left;
 }
 .image1:hover #book1 {
-    transform: perspective(800px) rotateY(-80deg);
-    transform-origin: left;
+    transform: perspective(800px) rotateY(-80deg); 
 }
 .image2{
     display: flex;
@@ -40,7 +41,6 @@ body{background-color: currentColor;}
 }
 .image2:hover #book2 {
     transform: perspective(800px) rotateY(-80deg);
-    transform-origin: left;
 }
 .image3{
     display: flex;
@@ -51,7 +51,6 @@ body{background-color: currentColor;}
 }
 .image3:hover #book3 {
     transform: perspective(800px) rotateY(-80deg);
-    transform-origin: left;
 }
 #back-img {
     width: 900px;
